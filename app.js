@@ -5,7 +5,7 @@ const seconds = document.getElementById('seconds');
 
 const currentYear = new Date().getFullYear();
 
-const birthdayTime = new Date(`January 1 ${currentYear + 1} 00:00:00`);
+const birthdayTime = new Date(`October 22 ${currentYear + 1} 00:00:00`);
 
 // Update countdowntime
 
@@ -18,7 +18,7 @@ function updateCountdowntime() {
     const m = Math.floor(diff / 1000 / 60) % 60;
     const s = Math.floor(diff / 1000) % 60;
 
-    days.innnerHTML = d;
+    days.innerHTML = d;
     hours.innerHTML = h < 10 ? '0' + h : h;
     minutes.innerHTML = m < 10 ? '0' + m : m;
     seconds.innerHTML = s < 10 ? '0' + s : s;
